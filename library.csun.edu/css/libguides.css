@@ -1,0 +1,661 @@
+@charset "utf-8";
+/* CSS Document */
+/* Created for libguides.csun.edu */
+@font-face {
+	font-family: 'museo_sans_100';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_100-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_100-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100-webfont.svg#museo_sans_100regular) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_100_italic';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_100_italic-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_100_italic-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100_italic-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100_italic-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_100_italic-webfont.svg#museo_sans_100italic) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_300';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_300-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_300-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300-webfont.svg#museo_sans_300regular) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_300_italic';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_300_italic-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_300_italic-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300_italic-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300_italic-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_300_italic-webfont.svg#museo_sans_300italic) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_500';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_500-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_500-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500-webfont.svg#museo_sans_500regular) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_500_italic';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_500_italic-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_500_italic-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500_italic-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500_italic-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_500_italic-webfont.svg#museo_sans_500italic) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_700';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_700-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_700-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700-webfont.svg#museo_sans_700regular) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_700_italic';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_700_italic-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_700_italic-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700_italic-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700_italic-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_700_italic-webfont.svg#museo_sans_700italic) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_900';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_900-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_900-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900-webfont.svg#museo_sans_900regular) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans_900_italic';
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_900_italic-webfont.eot);
+	src: url(http://s3.amazonaws.com/libapps/sites/5554/include/museosans_900_italic-webfont.eot?#iefix) format("embedded-opentype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900_italic-webfont.woff) format("woff"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900_italic-webfont.ttf) format("truetype"), url(//s3.amazonaws.com/libapps/sites/5554/include/museosans_900_italic-webfont.svg#museo_sans_900italic) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/**Structural Elements**/
+
+
+html, body {
+	font-family: 'museo_sans_300', sans-serif;
+	font-size: 90%;
+	color:#000;
+	background-color: #ffffff;
+}
+
+h1#s-lg-guide-name {
+	font-family: 'museo_sans_700', sans-serif;
+        color: #d22030;
+}
+
+h2.s-lib-box-title {
+	font-size: 16px !important;	
+	border-bottom: 2px solid #ccc !important;
+	margin: 12px 12px 0px 12px;
+	background-color: #fff !important;
+	padding-left: 0px !important;
+	color: #d22030 !important;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 16px;
+	font-family: 'museo_sans_500', sans-serif;
+	font-weight: bold;
+	margin: 6px;
+	color: #444;
+}
+
+h4 {
+        font-size: 14px;   
+        font-family: 'museo_sans_500', sans-serif;
+        margin: 6px;
+}
+
+a {
+  color: #23527c;
+}
+
+.s-lib-box a:link, 
+.s-lib-box a:visited, 
+.s-lib-box a:hover, 
+.s-lib-box a:active {
+	color: #336ab6
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active  {
+    background-color: #336ab6;
+    border-color: #336ab6;
+}
+
+table.bordered {
+border-collapse:collapse;
+}
+
+table.bordered td, table.bordered th  {
+border: 1px solid #aaaaaa;
+padding: 10px;
+}
+
+/*info-graphic text box*/
+div.expandable-csun {
+      background-color: #fdea6f;
+      padding: 10px;
+      border: 1px solid #916946;
+      border-radius: 10px;
+      margin-bottom: 10px;
+}
+
+div.expandable-csun table.bordered td, div.expandable-csun table.bordered th  {
+      border: 1px solid #333 !important;
+}
+
+/**these are regular links in authored content, not menus**/
+div.s-lib-box-content a:link,
+div.s-lib-box-content a:visited,
+div.s-lib-box-content a:hover,
+div.s-lib-box-content a:active {
+	text-decoration: underline;
+}
+
+div.s-lib-box-content a.btn:link, 
+div.s-lib-box-content a.btn:visited, 
+div.s-lib-box-content a.btn:hover,
+div.s-lib-box-content a.btn:active {
+      text-decoration: none;
+}
+
+p {
+	margin: 0 6px 10px 6px;
+}
+
+div.s-lib-box-content>div.clearfix>ul {
+	margin: 0 6px 10px -20px;
+}
+
+/*this is for the linked logo part of the header*/
+/*div.libapps-oviatt-header*/
+div.libapps-csunlib-header {
+	display: table;
+	position:relative;
+	left: -16px;
+	top: 6px;
+	margin-bottom: 12px;
+}
+/*div.libapps-oviatt-header-row*/
+div.libapps-csunlib-header-row
+{
+	display: table-row;
+}
+div.libapps-oviatt-header-cell, div.libapps-csunlib-header-cell
+{
+	display: table-cell;
+}
+
+img.libcal2-header {
+  position: relative;
+  left: -8px;
+  top: 2px;
+  height: auto;
+  max-width: 100%;
+}
+
+
+/***something from desdemona for the header in Libguides testing Aug 23 2021 **/
+div.layout-table {
+   display:table;
+   }
+div.layout-table>div {
+   display:table-row;
+   }
+div.layout-table>div>div {
+   display:table-cell;
+   }
+
+
+
+
+h1#s-lib-public-header-title, div#s-lib-public-header-desc /*temporary alert*/
+{
+/*   background-color: yellow;*/
+}
+
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-pills > li > a {
+	background-color:#efefef;
+	color: #000;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-pills > .active > a {
+	background-color: #D22030;
+	color: #ffffff;
+}
+
+#s-lg-index-list .alert.alert-info {
+        display: none;
+/**This hides links to the subject pages in the subject dropdowns**/
+}
+
+p.ada_note {
+/**This is for providing hidden messages to screen readers**/
+	display: none;
+}
+
+/**This is for the breadcrumb**/
+#s-lib-admin-bc .breadcrumb>.active, #s-lib-bc .breadcrumb>.active{
+       color: #777766;
+}
+
+.breadcrumb>.active {
+       color: #777766;
+}
+
+/** This is for menu**/
+.nav .s-lg-index-nav-btn>button {
+       color: #446ab6;
+}
+
+
+#s-lg-az-nav, #s-lg-er-nav, #s-lg-hp-nav, #s-lg-profile-nav, #s-lg-srch-nav{
+       background: #f6f6f6;
+}
+
+#s-lg-hp-nav>ul>li{
+       border: 1px solid #cccccc;
+       border-top-left-radius: 5px;
+       border-top-right-radius: 5px;
+}
+
+#s-lg-hp-nav>ul>li#s-lg-hp-nav-bottom{
+       border-top-left-radius: 0px;       
+       border-top-right-radius: 0px; 
+}
+
+
+
+/**subject buttons on main page**/
+.panel-default>.panel-heading {
+
+}
+
+
+.alert-info {
+	background-color: #ffffff;
+}
+
+/** email link on Librarian contact block**/
+
+a.label:link, a.label:visited, a.label:focus, a.label:hover, a.label:active {
+       color: #ffffff;
+}
+
+/***individual guide navigation contrast fixes***/
+.nav>li.disabled>a {
+	color: #666
+}
+.nav>li.disabled>a:focus, .nav>li.disabled>a:hover {
+	color: #666;
+	text-decoration: none;
+	cursor: not-allowed;
+	background-color: transparent
+}
+
+
+
+/**This section is meant to trick the fake-left-navigation coding**/
+
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > li.dropdown.clearfix > a.s-lg-tab-drop {
+	display:none;
+}
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu {
+	position: relative;
+	top: 0%;
+	left: 0;
+	z-index: 1;
+	display: block;
+	float: none;
+	min-width: auto;
+	padding: 0;
+	margin: 0 0 0 20px !important;
+	font-size: 100%;
+	text-align: left;
+	list-style: none;
+    background-color: #D22030;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border-collapse:collapse;
+	border-radius: 0;
+	box-shadow:none !important;
+	border: 1px solid #ffffff !important;
+}
+		
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:link,
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:visited,
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:hover, 
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:active {
+	font-weight: bold;
+	padding: 4px 15px;
+	border: 1px solid #ffffff;
+	border-radius: 0;
+	line-height: 1.75;
+}
+
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:link,
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .active.dropdown.clearfix > ul.dropdown-menu > li > a:visited{
+	background-color: #efefef;
+	color: #000000;
+}
+
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:hover, 
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav > .dropdown.clearfix > ul.dropdown-menu > li > a:active{
+	background-color: #535353;
+	color: #ffffff;
+}
+		
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-pills > li > a {
+ 	font-weight: bold;
+	background-color: #efefef;
+	color: #000;
+	border-radius: 0;
+}
+		
+#s-lg-tabs-container > #s-lg-guide-tabs > .nav.nav-pills.nav-stacked.split-button-nav li {
+	line-height: 1.75;
+	border-radius: 0;
+}
+
+li.active-child a:link, li.active-child a:visited{
+	background-color: #D22030 !important;
+	color: #ffffff !important;
+}
+
+li.active-child a:hover, li.active-child a:active{
+	background-color: #535353 !important;
+	color: #ffffff !important;
+}
+
+
+/**EAltman Test styles **/
+ul.learning-outcomes {
+	list-style-type: none;
+
+}
+
+ul.learning-outcomes li {
+	border-bottom: 3px solid #aaaaaa;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-right: 6px;
+}
+
+i.red {
+	color: #D22030;
+}
+
+/***Accessibility Color Contrast fixes***/
+
+.s-lg-rss-date, 
+caption, 
+.h1 .small, .h1 small, 
+.h2 .small,.h2 small, 
+.h3 .small, .h3 small, 
+.h4 .small, .h4 small, 
+.h5 .small, .h5 small, 
+.h6 .small, .h6 small, 
+h1 .small, h1 small, 
+h2 .small, h2 small, 
+h3 .small, h3 small, 
+h4 .small, h4 small, 
+h5 .small, h5 small, 
+h6 .small, h6 small,
+.s-lib-color-lt-grey,
+.navbar-default .navbar-brand,
+.pagination>.disabled>a, 
+.pagination>.disabled>a:focus, 
+.pagination>.disabled>a:hover, 
+.pagination>.disabled>span, 
+.pagination>.disabled>span:focus, 
+.pagination>.disabled>span:hover,
+.s-srch-result-meta span.divider
+ {
+	color: #555;
+}
+
+.badge {
+	background-color: #555;
+}
+
+
+a.label-info {
+	background-color: #336ab6;
+}
+
+a.label-info[href]:focus, .label-info[href]:hover {
+    background-color: #0a356f;
+}
+
+div.s-lib-profile-email, li.has-subnav {
+    color: #ffffff;
+}
+
+div.s-lib-profile-widget>script>button {
+background-color:#269CC0 !important;
+}
+
+
+
+/**
+ * Oviatt Library Menu and Mobile Menu (source is on library7/libguides-menu)
+ */
+
+*{box-sizing:border-box}#mobile-menu--wrapper{font-family:museo_sans_300,Verdana,Tahoma,"DejaVu Sans",sans-serif;background-color:#d00d2d !important}#mobile-menu--wrapper .main-menu--links{display:none}@media screen and (min-width: 768px){#mobile-menu--wrapper{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px);height:0;display:none}}@media screen and (max-width: 767px){#mobile-menu--wrapper{display:block}}#mobile-menu--wrapper .menu-bar-red{background:#d00d2d;padding:5px}#mobile-menu--wrapper .hamburger-nav{margin-left:8px;color:#333;display:inline-flex;padding:0}#mobile-menu--wrapper .hamburger-image{position:relative;top:3px}#mobile-menu--wrapper a.hamburger-nav:hover,#mobile-menu--wrapper a.hamburger-nav:focus{text-decoration:none}#mobile-menu--wrapper .mobile-menu--bottom-border{height:1px;border:1px solid #b10b26;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);-webkit-overflow-scrolling:touch;margin:0 15px;padding:0;display:block}#mobile-menu--wrapper ul{margin:0;padding:0}#mobile-menu--wrapper ul li{list-style-type:none;margin:0;padding:0 15px}#mobile-menu--wrapper .main-menu--mobile-link a{background:#d00d2d;color:#fff;display:block;font-size:25px;font-weight:bold;padding:0px 0px 0px 10px;text-decoration:none;text-shadow:none;text-transform:capitalize;width:100%;border-top:none;border-right:none;border-left:none;border-bottom:1px solid #fff}#mobile-menu--wrapper .mobile-link-last a{border-bottom:none}#main-menu--wrapper{font-family:museo_sans_300,Verdana,Tahoma,"DejaVu Sans",sans-serif;border-radius:0;background-color:#D00D2D;margin-bottom:10px;margin-right:-15px;margin-left:-15px;box-shadow:0px 5px 7px -3px #969191;-webkit-box-shadow:0px 5px 7px -3px #969191;border:none;height:37px;min-height:37px}@media screen and (max-width: 767px){#main-menu--wrapper{display:none;position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px)}}@media screen and (min-width: 768px){#main-menu--wrapper{display:block}}@media screen and (max-width: 910px){#main-menu--wrapper .nav li>a{padding-left:10px !important;padding-right:10px !important}}@media screen and (min-width: 911px){#main-menu--wrapper .nav li>a{padding-left:15px;padding-right:15px}}#main-menu--wrapper a:focus,#main-menu--wrapper li:focus{-webkit-box-shadow:0 0 20px 0 #d00d2d;box-shadow:0 0 20px 0 #d00d2d}#main-menu--wrapper .left-nav-border{height:22px;width:1px;background:#FFF;top:6px;position:relative}#main-menu--wrapper .nav{margin:0 auto;text-align:center}#main-menu--wrapper .nav ul{position:absolute;top:2.5em;left:-9999px;opacity:0;transition:0.1s linear opacity;min-width:150px}#main-menu--wrapper .nav li{display:inline-flex;position:relative;margin-right:-4px}#main-menu--wrapper .nav li>a{float:left;box-shadow:none;background:0;border-top:0;border-right:0;border-bottom:0;text-decoration:none;color:#FFF;font-size:14px;font-weight:bold;padding-top:5px;padding-bottom:0;text-shadow:1px 1px 0 #000;text-transform:uppercase;height:37px;min-height:37px}#main-menu--wrapper .nav li>a:hover,#main-menu--wrapper .nav li>a:focus,#main-menu--wrapper .nav li:focus>a,#main-menu--wrapper .nav li:hover>a{background:#333333;outline:0;text-decoration:none}#main-menu--wrapper .nav li:hover ul,#main-menu--wrapper .nav li:focus ul,#main-menu--wrapper ul.show-menu{left:0;opacity:0.99;background:#333333;z-index:999;width:300px;-webkit-box-shadow:2px 2px 2px undefinedpx #FFFFFF;box-shadow:2px 2px 2px undefinedpx #FFFFFF}#main-menu--wrapper .nav ul li{float:none;position:static}#main-menu--wrapper .nav ul a{float:none;display:block;font-size:12px;text-shadow:none;transition:0.1s linear all}#main-menu--wrapper .nav ul a:hover,#main-menu--wrapper .nav ul a:focus{text-shadow:none}#main-menu--wrapper .list-reset{margin:0;padding:0;list-style:none}
+
+
+/**adding more visibility to focus**/
+
+
+.s-lib-box-content a:focus, .s-lib-box-content button:focus  .s-lib-box-content li:focus  {
+    box-shadow: 0px 0px 1px 2px #5ad;
+    color: #D00D2D;
+}
+
+/**adding img-responsive class**/
+.img-responsive {
+    display:block;
+    max-width:100%;
+    height:auto
+}
+
+
+div.s-lib-box-content>div.clearfix>ul.image-blocks {
+	display:block;
+        margin-right:auto;
+        margin-left:auto;
+}
+
+ul.image-blocks a {
+    padding: 10px; 
+    display: block;
+    margin: auto;
+}
+
+ul.image-blocks img {
+    max-width: 300px;
+    margin: auto;
+}
+
+/***Custom for Broadcast Dashboard***/
+/**
+ * @file
+ * Broadcast Dashboard additional Style file
+ * 
+ * Allowing the module to come with Bootstrap v3.3.7 alert classing.
+ */
+
+div#bd-message a:link,
+div#bd-message a:visited,
+div#bd-message a:hover,
+div#bd-message a:active {
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+/* Bootstrap Alert Classing */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
+
+/* Bootstrap Jumbotron Classing */
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+/*  background-color: #eee;*/
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+/*    padding-top: 48px;
+    padding-bottom: 48px;*/
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/* Custom classing */
+.bd_p p:last-child {
+    margin-bottom: 0px;
+}
+
+/*hidden link to go straight to div that holds libchat widget*/
+a#csunlibchat-skip {
+padding: 10px;
+position: absolute;
+top: calc(-40px);
+left: 0;
+border-right: 1px solid #fff;
+border-bottom: 1px solid #fff;
+border-bottom-right-radius: 8px;
+transition: top 1s ease-out, background 1s linear;
+z-index: 100;
+}
+
+a#oviattlibchat-skip:focus {
+transform: translate(0,40px);
+transition: transform 0.3s;
+} 
+
+/* adjust color of blog post byline */
+div#s-lg-blog-content span[style]
+  {
+  color: black !important;
+  }
+
+/***for Services updates button***/
+.btn-iris {
+  color: ffffff !important;
+  background-color: #584C93;
+  border-color: #443b71;
+  text-decoration: none;
+}
